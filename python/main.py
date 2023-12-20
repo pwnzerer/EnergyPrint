@@ -52,7 +52,7 @@ def run(playwright):
             if not pdf_url.startswith('http'):
                 pdf_url = base_url + pdf_url
 
-            file_name = f"file_source_{acct_number}_{invoice_date}.pdf"  # Adjust the file source as needed
+            file_name = f"EnergyPrint_{acct_number}_{invoice_date}.pdf"  # Adjust the file source as needed
 
             # Use a separate page for downloading the PDF
             download_page = context.new_page()
